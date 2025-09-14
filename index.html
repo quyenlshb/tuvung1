@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+import React from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App";
+import "./index.css";
 
-    <!-- Title & Basic SEO -->
-    <title>Tuvung App - Học từ vựng tiếng Nhật</title>
-    <meta name="description" content="Ứng dụng học từ vựng tiếng Nhật trực tuyến. Học dễ dàng, nhớ lâu với flashcard và chế độ luyện tập thông minh." />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/favicon.png" />
-
-    <!-- Theme color -->
-    <meta name="theme-color" content="#38bdf8" />
-  </head>
-  <body class="bg-gray-50 text-gray-900">
-    <div id="root"></div>
-    <script type="module" src="/src/index.js"></script>
-  </body>
-</html>
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<App />);
